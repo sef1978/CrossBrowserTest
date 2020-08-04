@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Thread Local Test Sanity Suite]" parallel="tests">
+  <test thread-count="2" verbose="3" name="Google Test(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.mytests.GoogleTest">
+        <methods>
+          <include name="googleTitleTest_2"/>
+          <include name="googleTitleTest_3"/>
+          <include name="googleTitleTest_1"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="googleTitleTest_4"/>
+        </methods>
+      </class> <!-- com.mytests.GoogleTest -->
+    </classes>
+  </test> <!-- Google Test(failed) -->
+</suite> <!-- Failed suite [Thread Local Test Sanity Suite] -->
